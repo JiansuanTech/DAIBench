@@ -12,6 +12,7 @@ pipeline {
       agent any
       steps {
         sh 'cd hardware/cpu-bandwidth && sh run.sh'
+        archiveArtifacts 'mlc.log'
       }
     }
 
