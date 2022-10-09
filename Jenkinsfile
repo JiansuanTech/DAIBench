@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       agent any
       steps {
-        git(url: 'https://github.com/JiansuanTech/DAIBench.git', poll: true, branch: 'master')
+        git(url: 'https://github.com/JiansuanTech/DAIBench.git', poll: true, branch: 'jenkins-test')
       }
     }
 
